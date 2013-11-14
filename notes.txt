@@ -1,0 +1,6 @@
+List of commits between dates:
+git --no-pager log --since "1.10.2013" --until "30.10.2013" --pretty=format:"%H" --author="Mateusz Jamiolkowski"
+git --no-pager diff 8231609906e74f444262690a437d22c4c1c51287
+
+- diff wyświetla za dużo zmiasn
+    - sprawdzić czy diff commit_id nie bierze jakiegoś przedziału

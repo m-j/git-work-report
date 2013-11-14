@@ -1,0 +1,15 @@
+{
+  "name": "git-work-report",
+  "version": "0.0.0",
+  "description": "Exports work report from gip repos",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "export"
+  ],
+  "author": "m-j",
+  "license": "BSD"
+}
