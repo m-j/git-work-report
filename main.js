@@ -4,6 +4,10 @@ var fs = require('fs')
 
 console.log(config.getReportPath())
 
+process.on('exit', function() {
+    console.log('Report generated and saved to:\n\t' + config.getReportPath());
+});
+
 config.repos.forEach(function(repoPath){
 
     report_generator.generate(
