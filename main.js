@@ -1,16 +1,19 @@
 var report_generator = require('./report-generator.js')
 var config = require('./config.js')
+var fs = require('fs')
 
-console.log('aaaa')
+console.log(config.getReportPath())
 
 config.repos.forEach(function(repoPath){
 
     report_generator.generate(
         repoPath,
-        {from: '1.11.2013', to: '30.11.2013'},
+        config.dateSpan,
         function(reportContents){
             console.log('------------------')
             console.log(reportContents);
+
+            fs.appendFileSync(config.getReportPath(), reportContents, {encoding : 'utf-8', flags: 'w'})
         }
     )
 })
