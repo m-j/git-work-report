@@ -14,9 +14,7 @@ config.repos.forEach(function(repoPath){
         repoPath,
         config.dateSpan,
         function(reportContents){
-            console.log('------------------')
-            console.log(reportContents);
-
+//            console.log('Contents of lenght: ' + reportContents.length)
             fs.appendFileSync(config.getReportPath(), reportContents, {encoding : 'utf-8', flags: 'w'})
         }
     )

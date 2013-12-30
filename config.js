@@ -2,13 +2,11 @@ var path = require('path')
 
 module.exports = {
     repos : [
-        '/Users/mjamiolkowski/Work/defra/_capdRepo/capd-frontends'
-        ,'/Users/mjamiolkowski/Work/defra/_capdRepo/capd-services'
-        , '/Users/mjamiolkowski/Work/Other/Projects/git-work-report-test-repo'
+
     ],
     dateSpan : {
-        from : '1.11.2013',
-        to: '30.11.2013'
+        from : '1.12.2013',
+        to: '30.12.2013'
     },
     reportsDir : './reports',
     getReportPath : function(){
